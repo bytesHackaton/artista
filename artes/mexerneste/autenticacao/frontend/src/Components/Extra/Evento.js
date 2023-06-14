@@ -24,7 +24,7 @@ export const Evento = (props) => {
         onClick={props.onClick}
         src={props.src}
         alt={props.alt}
-        className=" w-[10rem] h-[9.063rem] rounded-lg opacity-60 border-[3px] border-[#4D5E6B]"
+        className=" w-[10rem] h-[9.063rem] rounded-lg opacity-90 border-[3px] border-[#4D5E6B]"
       />
       <div className="absolute bottom-0 left-1 p-1 flex flex-col text-[#E3DEDE] capitalize  text-md">
         <p className="font-sfdisplay-semibold">{props.title}</p>

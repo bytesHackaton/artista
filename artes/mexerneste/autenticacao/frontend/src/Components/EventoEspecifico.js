@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Btn } from "./Extra/Btn";
 import { NavBar } from "./Extra/NavBar";
-import Rating from "@mui/material/Rating";
-import Box from "@mui/material/Box";
-import StarIcon from "@mui/icons-material/Star";
 import { Link, useHistory, useParams } from "react-router-dom";
-import { Calendario } from "../assets/Calendario";
-import { Localizacao } from "../assets/Localizacao";
 import { Euro } from "../assets/Euro";
+import { confirmAlert } from "react-confirm-alert"; // Import
+import "react-confirm-alert/src/react-confirm-alert.css"; // Import css
 
 export const EventoEspecifico = () => {
   const [state, setState] = useState([]);
@@ -61,23 +58,40 @@ export const EventoEspecifico = () => {
     }
   }
 
+  const modal = () => {
+    confirmAlert({
+      title: "Confirma",
+      message: "Tens a certeza que queres comprar o artigo?",
+      buttons: [
+        {
+          label: "Sim",
+          onClick: () => buyTicket(),
+        },
+        {
+          label: "Não",
+          onClick: () => history.push(`/events/event/${id}`),
+        },
+      ],
+    });
+  };
+
   return (
     <div
-      className={`h-screen relative overflow-x-hidden bg-corPrincipal flex flex-col items-center gap-3 text-escritaNormal`}
+      className={`h-screen relative overflow-x-hidden bg-corPrincipal flex flex-col items-center gap-3 text-white`}
     >
       {state && (
-        <div>
-          <div className="relative pt-10 text-white">
+        <div className="w-full">
+          <div className="text-white flex justify-center items-end h-[20rem]">
             <img
-              className="rounded-[9%] p-3 min-w-[25rem] max-w-[25rem] h-[15rem]"
+              className="rounded-[9%] p-3 min-w-[15rem] max-w-[15rem] h-[15rem]"
               src={state.image}
             />
           </div>
-          <div className=" w-full ml-3 h-[15%] overflow-y-auto">
+          <div className="ml-3 text-[1.2rem] overflow-y-auto mt-5">
             <p>{state.description}</p>
           </div>
           <div className=" w-full flex flex-col p-3 gap-3">
-            <div className="flex gap-3 w-full h-[2rem] items-center">
+            <div className="flex gap-1 w-full h-[2rem] items-center text-[1.2rem]">
               <p>
                 <Euro />
               </p>
@@ -85,25 +99,24 @@ export const EventoEspecifico = () => {
             </div>
           </div>
           {user && !user.parceiro && (
-            <div className="h-[35vh] flex items-end justify-center">
+            <div className="h-[18vh] flex items-end justify-center">
               <div className="flex justify-center items-end">
                 <Btn
                   type="button"
                   name={`PAGAR: ${state.price * numero} €`}
-                  onClick={buyTicket}
+                  onClick={modal}
                 />
               </div>
             </div>
           )}
-
           {loggedIn ? (
-            <div className="w-full absolute bottom-0">
+            <div className="w-full absolute bottom-0 left-0">
               <NavBar />
             </div>
           ) : (
             <Link to="/escolha">
-              <div className="flex justify-center p-3">
-                <h1 className="text-black w-[11rem] font-sfdisplay-semibold  border-b-2 border-black">
+              <div className="flex justify-center items-end p-3 h-[18rem]">
+                <h1 className="text-white w-[8.5rem] font-sfdisplay-semibold  border-b-2 border-white">
                   Torna-te um Re-Art
                 </h1>
               </div>

@@ -1,14 +1,14 @@
 export const NavBarBilhete2 = (props) => {
   return (
     <svg
-      width="48"
-      height="45"
-      viewBox="0 0 48 45"
+      width="50"
+      height="28"
+      viewBox="0 -1 50 45"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      xmlnsXLink="http://www.w3.org/1999/xlink"
+      xmlnsXLink="http://www.w3.org/1999/xlink%22%3E"
     >
-      <rect width="48" height="45" fill="url(#pattern0)" />
+      <rect width="50" height="45" fill="url(#pattern0)" />
       <defs>
         <pattern
           id="pattern0"

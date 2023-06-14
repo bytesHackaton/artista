@@ -5,7 +5,7 @@ import logo from "../assets/logo.png";
 export const Home = () => {
   return (
     <div
-      className=" bg-gradient-to-b from-corPrincipal to-corSecundaria"
+      className=""
       style={{
         backgroundImage: "url(back.png)",
         backgroundSize: "cover",

@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { NavBar } from "./Extra/NavBar";
 import { BtnCancelar } from "./Extra/BtnCancelar";
 import { useHistory } from "react-router-dom";
+import { confirmAlert } from "react-confirm-alert"; // Import
+import "react-confirm-alert/src/react-confirm-alert.css"; // Import css
 
 export const Bilhetes = () => {
   const [userImg, setUserImg] = useState("");
@@ -38,6 +40,7 @@ export const Bilhetes = () => {
     const userTickets = await res.json();
     setBilhetes(userTickets?.map((ele) => ele.eventId));
     setEventId(userTickets?.map((ele) => ele["_id"]));
+    console.log(userTickets);
   }
 
   async function getEvent() {
@@ -53,6 +56,7 @@ export const Bilhetes = () => {
 
   async function handleApagarBilhete(id) {
     console.log(eventId);
+    console.log("1", id);
 
     const res = await fetch(`/api/tickets/${id}`, {
       method: "DELETE",
@@ -69,6 +73,24 @@ export const Bilhetes = () => {
       console.log("NOT NICEEEEEEE");
     }
   }
+
+  const modal = (id) => {
+    confirmAlert({
+      title: "Confirma",
+      message:
+        "Tens a certeza que queres devolver o artigo? (o dinheiro será depositado na tua carteira).",
+      buttons: [
+        {
+          label: "Sim",
+          onClick: () => handleApagarBilhete(id),
+        },
+        {
+          label: "Não",
+          onClick: () => history.push("/bilhetes"),
+        },
+      ],
+    });
+  };
 
   useEffect(() => {
     getUser();
@@ -95,29 +117,26 @@ export const Bilhetes = () => {
                 <div className="relative ">
                   <img
                     src={ele.image}
-                    className="flex w-[22rem] min-h-[11rem] max-h-[11rem] opacity-60 rounded-lg border-[3px] border-[#4D5E6B] justify-center items-center"
+                    className="flex w-[20rem] min-h-[11rem] max-h-[11rem] opacity-60 rounded-lg border-[3px] border-[#4D5E6B] justify-center items-center"
                   />
                   <div className="absolute capitalize bottom-0 pl-3 pb-1 text-[#E3DEDE]">
                     <p className="font-sfdisplay-semibold text-[1.4rem] capitalize">
                       {ele.title}
                     </p>
-                    <p className="font-sfdisplay text-sm pb-1 text-[#a3a3a3] capitalize">
-                      Região do {ele.location}
-                    </p>
                   </div>
                 </div>
                 <div
                   className="flex justify-center"
-                  onClick={() => handleApagarBilhete(eventId[i])}
+                  onClick={() => modal(eventId[i])}
                 >
-                  <BtnCancelar name={"Cancelar"} />
+                  <BtnCancelar name={"Devolver"} />
                 </div>
               </div>
             );
           })
         ) : (
-          <h1 className="text-[2rem] text-gray-500 font-sfdisplay-semibold ">
-            Ainda sem bilhetes...
+          <h1 className="text-[2rem] text-white font-sfdisplay-semibold ">
+            Ainda sem Artigos...
           </h1>
         )}
       </div>

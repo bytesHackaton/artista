@@ -86,7 +86,7 @@ export const NavBar = () => {
                   : "font-sfdisplay-ultrathin text-sm text-[#ADAFBB]"
               }
             >
-              CRIAR EVENTO
+              CRIAR ARTIGO
             </p>
           </div>
         )}
@@ -94,7 +94,7 @@ export const NavBar = () => {
       <div className=" min-w-[4.3rem]">
         {state && !state.parceiro && (
           <div
-            className={`flex flex-col items-center justify-center  min-w-[4.3rem]`}
+            className={`flex flex-col items-center justify-center min-w-[4.3rem]`}
             onClick={() => handleClick("/bilhetes")}
           >
             {colorClick === "/bilhetes" ? (
@@ -110,7 +110,7 @@ export const NavBar = () => {
                   : "font-sfdisplay-ultrathin text-sm text-[#ADAFBB]"
               }
             >
-              BILHETES
+              ARTIGOS
             </p>
           </div>
         )}

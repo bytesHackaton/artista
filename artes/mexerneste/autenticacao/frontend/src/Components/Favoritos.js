@@ -52,6 +52,11 @@ export const Favoritos = () => {
     getEvent();
   }, [bilhetes]);
 
+  const handleMoveFavClick = (id) => {
+    const path = `/events/event/${id}`;
+    history.push(path, id);
+  };
+
   return (
     <div className={` h-screen bg-corPrincipal flex flex-col items-center `}>
       <div className="min-h-[16rem] flex flex-col justify-center items-center w-full">
@@ -66,8 +71,9 @@ export const Favoritos = () => {
             return (
               <div className="relative" key={i}>
                 <img
+                  onClick={() => handleMoveFavClick(ele["_id"])}
                   src={ele.image}
-                  className="min-w-[22rem] max-w-[22rem] min-h-[11rem] max-h-[11rem] border-[3px] border-[#4D5E6B] drop-shadow-lg opacity-60 rounded-lg"
+                  className="min-w-[20rem] max-w-[20rem] min-h-[11rem] max-h-[11rem] border-[3px] border-[#4D5E6B] drop-shadow-lg opacity-60 rounded-lg"
                 />
                 <div className="absolute bottom-0 pl-3 pb-1 text-white">
                   <p className="font-sfdisplay-semibold text-[1.4rem]">
@@ -82,7 +88,7 @@ export const Favoritos = () => {
           })
         ) : (
           <div className=" h-[13rem] flex items-center">
-            <h1 className="text-[2rem] text-gray-500 font-sfdisplay-semibold ">
+            <h1 className="text-[2rem] text-white font-sfdisplay-semibold ">
               Ainda sem favoritos...
             </h1>
           </div>

@@ -10,6 +10,8 @@ import {
 } from "react-router-dom";
 import { NavBar } from "./Extra/NavBar";
 import { BtnCancelar } from "./Extra/BtnCancelar";
+import { confirmAlert } from "react-confirm-alert"; // Import
+import "react-confirm-alert/src/react-confirm-alert.css"; // Import css
 
 export const Perfil = () => {
   const history = useHistory();
@@ -97,6 +99,23 @@ export const Perfil = () => {
     } else {
     }
   }
+
+  const modal = () => {
+    confirmAlert({
+      title: "Confirma",
+      message: "Tens a certeza que queres apagar a conta?",
+      buttons: [
+        {
+          label: "Sim",
+          onClick: () => handleApagarConta,
+        },
+        {
+          label: "Não",
+          onClick: () => history.push("/perfil"),
+        },
+      ],
+    });
+  };
 
   const handlePassword = () => {
     setTypeText((prevState) =>
@@ -266,7 +285,7 @@ export const Perfil = () => {
       {state && !state.parceiro && (
         <div className="w-full mt-3 flex justify-center">
           <span
-            onClick={handleApagarConta}
+            onClick={modal}
             className="font-sfdisplay-semibold text-[1rem] text-white border-b-2 border-white"
           >
             Apagar Conta

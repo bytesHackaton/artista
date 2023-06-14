@@ -4,6 +4,8 @@ import { Btn } from "./Extra/Btn";
 import { useHistory } from "react-router-dom";
 import { NavBar } from "./Extra/NavBar";
 import metodos from "../assets/metodos.png";
+import { confirmAlert } from "react-confirm-alert"; // Import
+import "react-confirm-alert/src/react-confirm-alert.css"; // Import css
 
 export const CarteiraRota = () => {
   const [state, setState] = useState(0);
@@ -50,16 +52,33 @@ export const CarteiraRota = () => {
     }
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = () => {
     setNextState(0);
     atualizarCarteira();
+  };
+
+  const modal = (e) => {
+    e.preventDefault();
+    confirmAlert({
+      title: "Confirma",
+      message: "Tens a certeza que queres depositar dinheiro à carteira?",
+      buttons: [
+        {
+          label: "Sim",
+          onClick: () => handleSubmit(),
+        },
+        {
+          label: "Não",
+          onClick: () => history.push("/carteiraroute"),
+        },
+      ],
+    });
   };
 
   return (
     <div>
       <form
-        onSubmit={handleSubmit}
+        onSubmit={modal}
         className={`relative h-screen overflow-hidden bg-corPrincipal flex flex-col items-center justify-start`}
       >
         <div className="flex gap-5 text-[3rem] items-end h-[30%]">
@@ -81,7 +100,7 @@ export const CarteiraRota = () => {
           value={nextState}
           onChange={(e) => handleDinheiro(e)}
         />
-        <div className="flex flex-col items-end  h-[20%] justify-end">
+        <div className="flex flex-col items-end h-[20%] justify-end">
           <img src={metodos} className="w-28" />
 
           <Btn name={`DEPOSITAR: ${nextState} €`} />

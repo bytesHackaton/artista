@@ -156,6 +156,20 @@ app.patch("/api/users/profile", authorize, async (req, res) => {
   }
 });
 
+//rafa
+/* app.get("/api/tickets", authorize, async (req, res) => {
+  try {
+    const userId = req.user._id;
+
+    const tickets = await getTicketByUserId(userId);
+
+    return res.status(200).json(tickets);
+  } catch (err) {
+    console.log(err);
+    return res.sendStatus(500);
+  }
+}); */
+
 // METHOD GET - Encontrar um utilizador - estrutura feito 100%
 app.get("/api/users/profile", authorize, async (req, res) => {
   try {

@@ -32,6 +32,7 @@ export const GeralEventos = () => {
   const [userName, setUserName] = useState("");
   const [user, setUser] = useState();
   const [fav, setFav] = useState([]);
+  const [ticket, setTickets] = useState();
 
   async function getUser() {
     const res = await fetch(`/api/users/profile`, {
@@ -67,7 +68,7 @@ export const GeralEventos = () => {
     getEventsEsculturas();
     getEventsArtesanatos();
     getFavoritesEvents();
-
+    /*  getTickets(); */
     getUser();
   }, []);
 
@@ -108,6 +109,18 @@ export const GeralEventos = () => {
   const handlePageEsculturas = () => {
     history.push("/artigosEsculturas");
   };
+  //rafa
+  /*   async function getTickets() {
+    const res = await fetch("/api/tickets", {
+      headers: {
+        authorization: localStorage.getItem("token") ?? "",
+        "Content-Type": "application/json",
+      },
+    });
+    const data = await res.json();
+    setTickets(data.map((ele) => ele.eventId));
+    console.log("TICKET", ticket);
+  } */
 
   async function handleFavClick(id) {
     const res = await fetch(`/api/users/favorite`, {
@@ -133,12 +146,10 @@ export const GeralEventos = () => {
   return (
     <div className={`h-screen bg-corPrincipal flex flex-col items-center `}>
       <div className="text-[2.5rem] h-[5rem] flex w-full items-center justify-around">
-        {userName && (
-          <h1 className="text-[#E3DEDE] capitalize">Olá {userName}!</h1>
-        )}
-        {!userName && <h1 className="text-[#E3DEDE]">Bem-vindo</h1>}
+        {userName && <h1 className="text-white capitalize">Olá {userName}!</h1>}
+        {!userName && <h1 className="text-white">Bem-vindo</h1>}
 
-        {loggedIn && user && (
+        {loggedIn && user && !user.parceiro && (
           <div className="relative" onClick={() => handleCarteira()}>
             {loggedIn && !user.parceiro && <Carteira fill="transparent" />}
             <p className="text-[1.5rem] text-white absolute">
@@ -152,7 +163,6 @@ export const GeralEventos = () => {
         {quadros.length > 0 ? (
           <div class="carro" className="w-full relative">
             <Splide
-              // alinhar ao titulo dos eventos
               options={{
                 type: "loop",
                 perPage: 2,
