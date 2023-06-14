@@ -4,7 +4,6 @@ import { useHistory } from "react-router-dom";
 
 export const ArtigosQuadros = () => {
   const [quadros, setQuadros] = useState();
-  const [ticket, setTickets] = useState();
   const history = useHistory();
 
   async function getEventsQuadros() {
@@ -15,25 +14,12 @@ export const ArtigosQuadros = () => {
 
   useEffect(() => {
     getEventsQuadros();
-    getTickets();
   }, []);
 
   const handleMoveFavClick = (id) => {
     const path = `/events/event/${id}`;
     history.push(path, id);
   };
-
-  async function getTickets() {
-    const res = await fetch("/api/tickets", {
-      headers: {
-        authorization: localStorage.getItem("token") ?? "",
-        "Content-Type": "application/json",
-      },
-    });
-
-    const data = await res.json();
-    setTickets(data.map((ele) => ele.eventId));
-  }
 
   return (
     <div
