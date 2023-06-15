@@ -1,0 +1,90 @@
+[{
+  "_id": {
+    "$oid": "648a4188ffebe68ebc071ea5"
+  },
+  "title": "Quadro adelle",
+  "description": "O quadro 'Adelle Resignificada' é uma obra de arte envolvente, que retrata a talentosa cantora Adele, cada detalhe de sua fisionomia é construído, utilizando pedaços de plástico reciclado selecionados, como garrafas, tampas e outros objetos reutilizados.",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVlNsjrYzgi5a1j-D-Dk2ZM-I1VfOzlhXihAxMnuieXULHmlYoc1GGUvG24OJvHzMaZQg&usqp=CAU",
+  "price": "20",
+  "category": "quadros"
+},
+{
+  "_id": {
+    "$oid": "648a41cfffebe68ebc071ea7"
+  },
+  "title": "Quadro Einstein",
+  "description": "O quadro 'Einstein Reinventado' é uma obra de arte cativante, que retrata o iconico cientista Albert Einstein, criada a partir de uma abordagem inovadora e sustentável, utilizando materiais plásticos reciclados.",
+  "image": " https://cdn.ibahia.com/wp-content/uploads/fileadmin/representativas/RTEmagicC_Jane-Perkins__1_.jpg.jpg",
+  "price": "50",
+  "category": "quadros"
+},
+{
+  "_id": {
+    "$oid": "648a41ebffebe68ebc071ea8"
+  },
+  "title": "Quadro Diana",
+  "description": "O quadro 'Princesa Diana Renascida' é uma obra de arte única, criada com uma abordagem sustentável, utilizando materiais recicláveis cuidadosamente selecionados. Nesta representação, a figura icónica da Princesa Diana é retratada com delicadeza e reverência. ",
+  "image": "https://cdn.ibahia.com/wp-content/uploads/fileadmin/representativas/RTEmagicC_Jane-Perkins__4_.jpg.jpg",
+  "price": "25",
+  "category": "quadros"
+},
+{
+  "_id": {
+    "$oid": "648a423dffebe68ebc071eac"
+  },
+  "title": "Escultura Canina",
+  "description": "A \"Escultura Canina Sustentável\" é uma obra de arte  criada com materiais recicláveis cuidadosamente selecionados, dando forma a um cão majestoso. Esta escultura reúne a criatividade e o compromisso com a sustentabilidade de uma maneira única.",
+  "image": " https://lh4.googleusercontent.com/-mDdB2EIIT90/TXj2duwlBFI/AAAAAAAAAd0/54DfLwA4TRA/s1600/robertg1.jpg",
+  "price": "50",
+  "category": "esculturas"
+},
+{
+  "_id": {
+    "$oid": "648a4347ffebe68ebc071ead"
+  },
+  "title": "Escultura pato",
+  "description": "A \"Escultura Sustentável de Pato\" é uma peça artística notável, utilizando diversos materiais recicláveis, como garrafas plásticas, tampas e retalhos de tecido, o escultor deu vida a um pato com detalhes precisos. ",
+  "image": "https://i0.wp.com/lugarnenhum.net/wp-content/uploads/2020/11/franc-2.jpg?resize=1024%2C767&ssl=1",
+  "price": "20",
+  "category": "esculturas"
+},
+{
+  "_id": {
+    "$oid": "648a437effebe68ebc071eae"
+  },
+  "title": "Escultura Passaro",
+  "description": "A Escultura Ecoconsciente deste Pássaro é uma obra de arte impressionante, utilizando materiais como papel reciclado, tecidos reaproveitados e arames reciclados, o escultor deu forma a um pássaro com atenção aos mínimos detalhes.",
+  "image": "https://i0.wp.com/lugarnenhum.net/wp-content/uploads/2020/11/bird-2.jpg?w=640&ssl=1",
+  "price": "35",
+  "category": "esculturas"
+},
+{
+  "_id": {
+    "$oid": "648a4409ffebe68ebc071eaf"
+  },
+  "title": "Garrafas Personalizadas",
+  "description": "As \"Garrafas Reutilizadas\" são uma coleção encantadora de quatro garrafas artesanais feitas com materiais reciclados, também servem como lembretes visuais do potencial de transformação que o material reciclado pode trazer à decoração e ao meio ambiente.",
+  "image": "https://mostardela.com/wp-content/uploads/2016/11/artesanato-com-material-reciclado-018.png",
+  "price": "10",
+  "category": "artesanatos"
+},
+{
+  "_id": {
+    "$oid": "648a442fffebe68ebc071eb0"
+  },
+  "title": "Lampadas ",
+  "description": "As \"Três Lâmpadas Reimaginadas\" são criações artísticas surpreendentes, feitas a partir de lâmpadas recicladas, que ganham uma nova função e encantam com seu design único. Cada lâmpada foi transformada em uma peça exclusiva.",
+  "image": " https://mostardela.com/wp-content/uploads/2016/11/artesanato-com-material-reciclado-017.png",
+  "price": "7",
+  "category": "artesanatos"
+},
+{
+  "_id": {
+    "$oid": "648a4496ffebe68ebc071eb1"
+  },
+  "title": "Vaso",
+  "description": "Os \"Dois Vasos Felinos\" são criações encantadoras, com o desenho de gatos adoráveis na sua frente, adicionando um toque de charme e personalidade à decoração. Cada vaso apresenta um gato único, retratado de forma cativante e artística.",
+  "image": "https://imagens-revista.vivadecora.com.br/uploads/2017/09/Como-fazer-vaso-de-garrafa-pet-de-bichinho-1.jpg",
+  "price": "10",
+  "category": "artesanatos"
+}]

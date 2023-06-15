@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "648a4409ffebe68ebc071eaf"
+  },
+  "title": "Garrafas Personalizadas",
+  "description": "As \"Garrafas Reutilizadas\" são uma coleção encantadora de quatro garrafas artesanais feitas com materiais reciclados, também servem como lembretes visuais do potencial de transformação que o material reciclado pode trazer à decoração e ao meio ambiente.",
+  "image": "https://mostardela.com/wp-content/uploads/2016/11/artesanato-com-material-reciclado-018.png",
+  "price": "10",
+  "category": "artesanatos"
+},
+{
+  "_id": {
+    "$oid": "648a442fffebe68ebc071eb0"
+  },
+  "title": "Lampadas ",
+  "description": "As \"Três Lâmpadas Reimaginadas\" são criações artísticas surpreendentes, feitas a partir de lâmpadas recicladas, que ganham uma nova função e encantam com seu design único. Cada lâmpada foi transformada em uma peça exclusiva.",
+  "image": " https://mostardela.com/wp-content/uploads/2016/11/artesanato-com-material-reciclado-017.png",
+  "price": "7",
+  "category": "artesanatos"
+},
+{
+  "_id": {
+    "$oid": "648a4496ffebe68ebc071eb1"
+  },
+  "title": "Vaso",
+  "description": "Os \"Dois Vasos Felinos\" são criações encantadoras, com o desenho de gatos adoráveis na sua frente, adicionando um toque de charme e personalidade à decoração. Cada vaso apresenta um gato único, retratado de forma cativante e artística.",
+  "image": "https://imagens-revista.vivadecora.com.br/uploads/2017/09/Como-fazer-vaso-de-garrafa-pet-de-bichinho-1.jpg",
+  "price": "10",
+  "category": "artesanatos"
+}]

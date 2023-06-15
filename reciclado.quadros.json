@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "648a4188ffebe68ebc071ea5"
+  },
+  "title": "Quadro adelle",
+  "description": "O quadro 'Adelle Resignificada' é uma obra de arte envolvente, que retrata a talentosa cantora Adele, cada detalhe de sua fisionomia é construído, utilizando pedaços de plástico reciclado selecionados, como garrafas, tampas e outros objetos reutilizados.",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVlNsjrYzgi5a1j-D-Dk2ZM-I1VfOzlhXihAxMnuieXULHmlYoc1GGUvG24OJvHzMaZQg&usqp=CAU",
+  "price": "20",
+  "category": "quadros"
+},
+{
+  "_id": {
+    "$oid": "648a41cfffebe68ebc071ea7"
+  },
+  "title": "Quadro Einstein",
+  "description": "O quadro 'Einstein Reinventado' é uma obra de arte cativante, que retrata o iconico cientista Albert Einstein, criada a partir de uma abordagem inovadora e sustentável, utilizando materiais plásticos reciclados.",
+  "image": " https://cdn.ibahia.com/wp-content/uploads/fileadmin/representativas/RTEmagicC_Jane-Perkins__1_.jpg.jpg",
+  "price": "50",
+  "category": "quadros"
+},
+{
+  "_id": {
+    "$oid": "648a41ebffebe68ebc071ea8"
+  },
+  "title": "Quadro Diana",
+  "description": "O quadro 'Princesa Diana Renascida' é uma obra de arte única, criada com uma abordagem sustentável, utilizando materiais recicláveis cuidadosamente selecionados. Nesta representação, a figura icónica da Princesa Diana é retratada com delicadeza e reverência. ",
+  "image": "https://cdn.ibahia.com/wp-content/uploads/fileadmin/representativas/RTEmagicC_Jane-Perkins__4_.jpg.jpg",
+  "price": "25",
+  "category": "quadros"
+}]

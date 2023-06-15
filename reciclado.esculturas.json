@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "648a423dffebe68ebc071eac"
+  },
+  "title": "Escultura Canina",
+  "description": "A \"Escultura Canina Sustentável\" é uma obra de arte  criada com materiais recicláveis cuidadosamente selecionados, dando forma a um cão majestoso. Esta escultura reúne a criatividade e o compromisso com a sustentabilidade de uma maneira única.",
+  "image": " https://lh4.googleusercontent.com/-mDdB2EIIT90/TXj2duwlBFI/AAAAAAAAAd0/54DfLwA4TRA/s1600/robertg1.jpg",
+  "price": "50",
+  "category": "esculturas"
+},
+{
+  "_id": {
+    "$oid": "648a4347ffebe68ebc071ead"
+  },
+  "title": "Escultura pato",
+  "description": "A \"Escultura Sustentável de Pato\" é uma peça artística notável, utilizando diversos materiais recicláveis, como garrafas plásticas, tampas e retalhos de tecido, o escultor deu vida a um pato com detalhes precisos. ",
+  "image": "https://i0.wp.com/lugarnenhum.net/wp-content/uploads/2020/11/franc-2.jpg?resize=1024%2C767&ssl=1",
+  "price": "20",
+  "category": "esculturas"
+},
+{
+  "_id": {
+    "$oid": "648a437effebe68ebc071eae"
+  },
+  "title": "Escultura Passaro",
+  "description": "A Escultura Ecoconsciente deste Pássaro é uma obra de arte impressionante, utilizando materiais como papel reciclado, tecidos reaproveitados e arames reciclados, o escultor deu forma a um pássaro com atenção aos mínimos detalhes.",
+  "image": "https://i0.wp.com/lugarnenhum.net/wp-content/uploads/2020/11/bird-2.jpg?w=640&ssl=1",
+  "price": "35",
+  "category": "esculturas"
+}]

@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "6489cee243bb578fa2094e70"
+  },
+  "nome": "aa",
+  "email": "aa",
+  "password": "a",
+  "datadenascimento": "2023-06-01",
+  "carteira": 0,
+  "parceiro": true,
+  "imagem": "https://img.freepik.com/free-icon/user_318-804790.jpg?w=2000",
+  "numeroTelemovel": "123"
+},
+{
+  "_id": {
+    "$oid": "6489fcb98a23315155d30f48"
+  },
+  "nome": "a",
+  "email": "a",
+  "password": "a",
+  "datadenascimento": "2023-06-01",
+  "carteira": 106,
+  "parceiro": false,
+  "imagem": "https://img.freepik.com/free-icon/user_318-804790.jpg?w=2000"
+},
+{
+  "_id": {
+    "$oid": "648a1e7665814bcd967cb6fe"
+  },
+  "nome": "b",
+  "email": "b",
+  "password": "b",
+  "datadenascimento": "2023-06-01",
+  "carteira": 0,
+  "parceiro": false,
+  "imagem": "https://img.freepik.com/free-icon/user_318-804790.jpg?w=2000"
+},
+{
+  "_id": {
+    "$oid": "648af287a153a3a66e840e91"
+  },
+  "nome": "Diogo",
+  "email": "diogo@email.com",
+  "password": "123",
+  "datadenascimento": "2023-06-01",
+  "carteira": 0,
+  "parceiro": false,
+  "imagem": "https://img.freepik.com/free-icon/user_318-804790.jpg?w=2000"
+}]
