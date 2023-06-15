@@ -73,14 +73,11 @@ export const Favoritos = () => {
                 <img
                   onClick={() => handleMoveFavClick(ele["_id"])}
                   src={ele.image}
-                  className="min-w-[20rem] max-w-[20rem] min-h-[11rem] max-h-[11rem] border-[3px] border-[#4D5E6B] drop-shadow-lg opacity-60 rounded-lg"
+                  className="min-w-[20rem] max-w-[20rem] min-h-[11rem] max-h-[11rem] border-[3px] border-[#4D5E6B] drop-shadow-lg opacity-70 rounded-lg"
                 />
                 <div className="absolute bottom-0 pl-3 pb-1 text-white">
                   <p className="font-sfdisplay-semibold text-[1.4rem]">
                     {ele.title}
-                  </p>
-                  <p className="font-sfdisplay text-sm text-[#a3a3a3]">
-                    Região do {ele.location}
                   </p>
                 </div>
               </div>

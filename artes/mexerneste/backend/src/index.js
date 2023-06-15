@@ -170,6 +170,20 @@ app.patch("/api/users/profile", authorize, async (req, res) => {
   }
 }); */
 
+//joaoluis
+app.get("/api/tickets/:eventId", authorize, async (req, res) => {
+  try {
+    const eventId = req.params.eventId;
+    const tickets = await tickets
+      .find({ eventId: new ObjectId(eventId) })
+      .toArray();
+    return res.status(200).json(tickets);
+  } catch (err) {
+    console.log(err);
+    return res.sendStatus(500);
+  }
+});
+
 // METHOD GET - Encontrar um utilizador - estrutura feito 100%
 app.get("/api/users/profile", authorize, async (req, res) => {
   try {

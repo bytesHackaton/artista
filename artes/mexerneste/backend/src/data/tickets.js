@@ -27,6 +27,14 @@ async function findTicket(id) {
   return ticket;
 }
 
+//joaoluis
+async function getTicketByEventId(eventId) {
+  const tickets = await getMongoCollection("tickets");
+  const alltickets = await tickets.find({}).toArray();
+  console.log(alltickets);
+  return alltickets;
+}
+
 module.exports = {
   insertTicket,
   removeTicketById,

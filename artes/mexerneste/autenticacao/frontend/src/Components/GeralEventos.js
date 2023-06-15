@@ -32,7 +32,6 @@ export const GeralEventos = () => {
   const [userName, setUserName] = useState("");
   const [user, setUser] = useState();
   const [fav, setFav] = useState([]);
-  const [ticket, setTickets] = useState();
 
   async function getUser() {
     const res = await fetch(`/api/users/profile`, {
@@ -111,16 +110,16 @@ export const GeralEventos = () => {
   };
   //rafa
   /*   async function getTickets() {
-    const res = await fetch("/api/tickets", {
-      headers: {
-        authorization: localStorage.getItem("token") ?? "",
-        "Content-Type": "application/json",
-      },
-    });
-    const data = await res.json();
-    setTickets(data.map((ele) => ele.eventId));
-    console.log("TICKET", ticket);
-  } */
+      const res = await fetch("/api/tickets", {
+        headers: {
+          authorization: localStorage.getItem("token") ?? "",
+          "Content-Type": "application/json",
+        },
+      });
+      const data = await res.json();
+      setTickets(data.map((ele) => ele.eventId));
+      console.log("TICKET", ticket);
+    } */
 
   async function handleFavClick(id) {
     const res = await fetch(`/api/users/favorite`, {

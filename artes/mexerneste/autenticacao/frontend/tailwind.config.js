@@ -11,7 +11,7 @@ module.exports = {
         borderFoto: "#4D5E6B",
         escritaNormal: "#E3DEDE",
         botaonNormal: "#00a000",
-        termosUso: "#5259FD",
+        termosUso: "#355337",
         registate: "#ffff",
         tituloAzulBotaoContrario: "#120D26",
         cancelar: "#F93A3A",

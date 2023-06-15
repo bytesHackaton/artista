@@ -50,7 +50,7 @@ export const CriarConta = () => {
   }
 
   return (
-    <div className=" bg-gradient-to-b from-corPrincipal to-corSecundaria h-[100vh] w-full flex gap-3 flex-col">
+    <div className="bg-corPrincipal h-[100vh] w-full flex gap-3 flex-col">
       <div className="flex items-end ml-5 h-[15rem]">
         <h1 className="text-[#ffff] font-sfdisplay-bold text-[3rem] ">
           Criar Conta

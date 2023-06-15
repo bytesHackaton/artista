@@ -23,9 +23,11 @@ export const ArtigosEsculturas = () => {
 
   return (
     <div
-      className={`h-[100vh] overflow-hidden bg-corPrincipal flex flex-col items-center justify-center`}
+      className={`h-[100vh] overflow-hidden bg-corPrincipal flex flex-col gap-5 items-center justify-center`}
     >
-      <div className="flex flex-col gap-3 overflow-y-auto h-[80vh]">
+      <h1 className="text-[2rem] text-white text-bold h-[5rem]">Esculturas</h1>
+
+      <div className="flex flex-col gap-5 overflow-y-auto mb-3 h-[80vh]">
         {esculturas && esculturas.length > 0 ? (
           esculturas?.map((ele, i) => {
             return (
